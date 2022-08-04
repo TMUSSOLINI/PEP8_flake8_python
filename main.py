@@ -1,11 +1,11 @@
 from fila_normal import Filanormal
 from fila_prioritaria import FilaPrioritaria
 
-fila_teste = Filanormal()
-fila_teste.atualizaFila()
-fila_teste.atualizaFila()
-print(fila_teste.chamaCliente(5))
-print(fila_teste.chamaCliente(10))
+# fila_teste = Filanormal()
+# fila_teste.atualiza_fila()
+# fila_teste.atualiza_fila()
+# print(fila_teste.chama_cliente(5))
+# print(fila_teste.chama_cliente(10))
 
 fila_teste2 = FilaPrioritaria()
 fila_teste2.atualiza_fila()
