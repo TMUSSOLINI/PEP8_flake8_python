@@ -1,14 +1,17 @@
 import abc
+from typing import List
+
+from constantes import tamanho_padrao_maximo, tamanho_padrao_minimo
 
 class FilaBase(metaclass=abc.ABCMeta):
     codigo = 0
-    fila = []
-    clientes_atendidos = []
+    fila: list[str] = []
+    clientes_atendidos: list[str]  = []
     senha_atual:str = ''
 
     def reseta_fila(self) -> None:
-        if self.codigo >= 200:
-            self.codigo = 0
+        if self.codigo >= tamanho_padrao_maximo:
+            self.codigo = tamanho_padrao_minimo
         else:
             self.codigo += 1
 
